@@ -1,0 +1,58 @@
+.wrapper{
+    position: relative;
+    background: #F9ABC1;
+    overflow: hidden;
+}
+.circular-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 240px;
+    height: 240px;
+    margin:-180px 0 0 -130px;
+    border-radius: 50%;
+    border:10px solid #FAD6E0;
+    background: #F4F9FD;
+    overflow: hidden;
+    box-shadow: 0 0 10px #999;
+}
+.hand-man,.hand-woman{
+    position: absolute;
+    width: 45px;
+    height: 130px;
+    background: #FFE4BE;
+}
+.hand-man{
+    transform: rotate(-30deg);
+    left: 30px;
+    top: 10px;
+}
+.hand-woman{
+    transform: rotate(30deg);
+    right: 30px;
+    top: 10px;
+}
+.hand-man .palm,.hand-woman .palm{
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 75px;
+    border-radius: 50%;
+    background: #FFE4BE;
+}
+.hand-man .palm{
+    bottom: -35px;
+    right: -5px;
+}
+.hand-man .palm span{
+    position: absolute;
+    right: 4px;
+    top: 51px;
+    width: 10px;
+    height: 30px;
+    border-radius: 5px;
+    background: #FFE4BE;
+    transform: rotate(10deg);
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
