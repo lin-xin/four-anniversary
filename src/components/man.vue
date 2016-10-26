@@ -26,6 +26,10 @@
             <div class="show-heart"><heart></heart></div>
             <div class="show-heart small"><heart></heart></div>
         </div>
+        <div class="font-box">
+            <p>给，送你一朵小花</p>
+        </div>
+        <a v-link="{path:'/time'}" class="btn-received">收下</a>
     </div>
 </template>
 

@@ -16,6 +16,16 @@ router.map({
         component:function (resolve) {
             require(['./components/man.vue'], resolve)
         }
+    },
+    '/sky':{
+        component:function (resolve) {
+            require(['./components/sky.vue'], resolve)
+        }
+    },
+    '/time':{
+        component:function (resolve) {
+            require(['./components/time.vue'], resolve)
+        }
     }
 });
 router.redirect({

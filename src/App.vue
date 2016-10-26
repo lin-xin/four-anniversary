@@ -1,6 +1,7 @@
 <template>
 	<div class="main">
-		<router-view transition="fade" transition-mode="out-in"></router-view>
+		<!--<router-view transition="fade" transition-mode="out-in"></router-view>-->
+		<router-view></router-view>
 	</div>
 </template>
 <style>
