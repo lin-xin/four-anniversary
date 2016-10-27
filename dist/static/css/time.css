@@ -1,0 +1,180 @@
+.wrapper {
+  position: relative;
+  background: #000;
+}
+
+.rose-box {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  width: 320px;
+  margin-left: -160px;
+}
+.rose-box .day {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -50px;
+  color: #FEFED1;
+  text-align: center;
+  font-size: 30px;
+  animation: show-day 21s ease;
+}
+.rose-box .rose {
+  position: absolute;
+}
+.rose-box .rose1 {
+  left: 210px;
+  top: 0;
+  transform: rotate(45deg);
+  animation: moveing-rose1 2s ease;
+}
+.rose-box .rose2 {
+  left: 309px;
+  top: 47px;
+  transform: rotate(110deg);
+  animation: moveing-rose2 4s ease;
+}
+.rose-box .rose3 {
+  left: 280px;
+  top: 158px;
+  transform: rotate(195deg);
+  animation: moveing-rose3 6s ease;
+}
+.rose-box .rose4 {
+  left: 232px;
+  top: 219px;
+  transform: rotate(215deg);
+  animation: moveing-rose4 8s ease;
+}
+.rose-box .rose5 {
+  left: 160px;
+  top: 265px;
+  transform: rotate(230deg);
+  animation: moveing-rose5 10s ease;
+}
+.rose-box .rose6 {
+  left: 180px;
+  top: 235px;
+  transform: rotate(-230deg);
+  animation: moveing-rose6 12s ease;
+}
+.rose-box .rose7 {
+  left: 121px;
+  top: 192px;
+  transform: rotate(-215deg);
+  animation: moveing-rose7 14s ease;
+}
+.rose-box .rose8 {
+  left: 77px;
+  top: 144px;
+  transform: rotate(-195deg);
+  animation: moveing-rose8 16s ease;
+}
+.rose-box .rose9 {
+  left: 24px;
+  top: 82px;
+  transform: rotate(-110deg);
+  animation: moveing-rose9 18s ease;
+}
+.rose-box .rose10 {
+  left: 80px;
+  top: 27px;
+  transform: rotate(-45deg);
+  animation: moveing-rose10 20s ease;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 100px;
+  height: 50px;
+  line-height: 50px;
+  color: #FEFED1;
+  text-align: center;
+  font-size: 25px;
+  background: red;
+  font-family: arial, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  animation: show-day 21s ease;
+}
+
+@keyframes show-day {
+  0%,95.2% {
+    opacity: 0;
+  }
+}
+@keyframes moveing-rose1 {
+  0% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveing-rose2 {
+  0%,50% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveing-rose3 {
+  0%,66.6% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveing-rose4 {
+  0%,75% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveing-rose5 {
+  0%,80% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveing-rose6 {
+  0%,83.3% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveing-rose7 {
+  0%,85.7% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveing-rose8 {
+  0%,87.5% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveing-rose9 {
+  0%,88.9% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveing-rose10 {
+  0%,90% {
+    left: -100px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=time.css.map */

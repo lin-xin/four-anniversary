@@ -1,0 +1,131 @@
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.sky{
+    position: relative;
+    height: 80%;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#05679a), to(#022436));
+}
+.moon{
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    width: 58px;
+    height: 58px;
+    background: #FEFED1;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #fff;
+}
+.star{
+    span{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        background: #FEFED1;
+        border-radius: 50%;
+        opacity: .8;
+    }
+    @for $i from 1 to 40{
+        span:nth-child(#{$i}){
+            left: random()*100%;
+            top: random()*300px;
+            animation: star-#{$i%2} 5s ease #{$i/4}s infinite;
+        }
+    }
+}
+.meteor{
+    position: absolute;
+    right: 100px;
+    top: 94px;
+    width: 35px;
+    height: 3px;
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#fff), to(rgba(153,153,153,.6)));
+    border-radius: 3px;
+    transform: rotate(-30deg) skew(17deg);
+    animation: meteor 5s linear infinite;
+    opacity: 0;
+    &:before{
+        content: '';
+        position: absolute;
+        left: -1px;
+        top: 0;
+        width: 3px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        box-shadow: 0 0 10px #fff;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        right: -4px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-left: 7px solid rgba(153,153,153,.4);
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+    }
+}
+.land{
+    height: 20%;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#022436), to(#000));
+}
+.windmill-1{
+    position: absolute;
+    transform: scale(.2);
+    left: 40px;
+    top: 32%;
+}
+.windmill-2{
+    position: absolute;
+    transform: scale(.15);
+    left: 120px;
+    top: 30%;
+}
+.windmill-3{
+    position: absolute;
+    transform: scale(.12);
+    left: 180px;
+    top: 29%;
+}
+@keyframes star-0 {
+    40%,60%{opacity: .8;}
+    50%{  opacity: 1;box-shadow: 0 0 10px #fff;}
+}
+@keyframes star-1 {
+    50%,70%{opacity: .8;}
+    60%{  opacity: 1;box-shadow: 0 0 10px #fff;
+        width: 2px;
+        height: 2px;}
+}
+@keyframes meteor {
+    0%,80%{opacity: 0;right: 40px;
+        top: 60px;}
+    85%,95%{  opacity: 1;}
+    90%{right: 70px;
+        top: 77px;}
+    100%{  opacity: 0;right: 100px;
+        top: 94px;}
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes caret {
+    50% { border-color: transparent; }
+}
+.fonts {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    width: 8ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .05em solid #FEFED1;
+    color: #FEFED1;
+    animation: typing 6s steps(4),
+    caret 1s steps(1) infinite;
+    z-index: 10;
+}
