@@ -20,7 +20,7 @@
   color: #FEFED1;
   text-align: center;
   font-size: 30px;
-  animation: show-day 21s ease;
+  animation: show-day 11s ease;
 }
 .rose-box .rose {
   position: absolute;
@@ -29,61 +29,61 @@
   left: 210px;
   top: 0;
   transform: rotate(45deg);
-  animation: moveing-rose1 2s ease;
+  animation: moveing-rose1 1s ease;
 }
 .rose-box .rose2 {
   left: 309px;
   top: 47px;
   transform: rotate(110deg);
-  animation: moveing-rose2 4s ease;
+  animation: moveing-rose2 2s ease;
 }
 .rose-box .rose3 {
   left: 280px;
   top: 158px;
   transform: rotate(195deg);
-  animation: moveing-rose3 6s ease;
+  animation: moveing-rose3 3s ease;
 }
 .rose-box .rose4 {
   left: 232px;
   top: 219px;
   transform: rotate(215deg);
-  animation: moveing-rose4 8s ease;
+  animation: moveing-rose4 4s ease;
 }
 .rose-box .rose5 {
   left: 160px;
   top: 265px;
   transform: rotate(230deg);
-  animation: moveing-rose5 10s ease;
+  animation: moveing-rose5 5s ease;
 }
 .rose-box .rose6 {
   left: 180px;
   top: 235px;
   transform: rotate(-230deg);
-  animation: moveing-rose6 12s ease;
+  animation: moveing-rose6 6s ease;
 }
 .rose-box .rose7 {
   left: 121px;
   top: 192px;
   transform: rotate(-215deg);
-  animation: moveing-rose7 14s ease;
+  animation: moveing-rose7 7s ease;
 }
 .rose-box .rose8 {
   left: 77px;
   top: 144px;
   transform: rotate(-195deg);
-  animation: moveing-rose8 16s ease;
+  animation: moveing-rose8 8s ease;
 }
 .rose-box .rose9 {
   left: 24px;
   top: 82px;
   transform: rotate(-110deg);
-  animation: moveing-rose9 18s ease;
+  animation: moveing-rose9 9s ease;
 }
 .rose-box .rose10 {
   left: 80px;
   top: 27px;
   transform: rotate(-45deg);
-  animation: moveing-rose10 20s ease;
+  animation: moveing-rose10 10s ease;
 }
 
 .title {
@@ -98,7 +98,7 @@
   font-size: 25px;
   background: red;
   font-family: arial, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-  animation: show-day 21s ease;
+  animation: show-day 11s ease;
 }
 
 @keyframes show-day {
